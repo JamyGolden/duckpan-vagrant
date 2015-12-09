@@ -44,10 +44,4 @@ Vagrant.configure("2") do |config|
 
   # setup synced folder for the DDG code: "local host machine path", "path on guest vm"
   config.vm.synced_folder CUSTOM_CONFIG['DDG_PATH'], "/code"
-
-  if Vagrant.has_plugin?("vagrant-proxyconf")
-    config.proxy.http = "http://192.168.3.6:3128/"
-    config.proxy.https = "http://192.168.3.6:3128/"
-    config.proxy.no_proxy = "localhost,127.0.0.1,.example.com"
-  end
 end
