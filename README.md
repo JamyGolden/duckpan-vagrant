@@ -6,7 +6,7 @@ This project provides a Vagrant-based development setup for DuckPAN. This projec
 
 1. Install: [Vagrant](http://docs.vagrantup.com/v2/installation/index.html) and [VirtualBox](https://www.virtualbox.org/wiki/Downloads)
 
-2. Clone this repo
+2. Clone this repo. `git clone https://github.com/JamyGolden/duckpan-vagrant.git`
 
 3. Run `vagrant up` within the cloned repo.
 
