@@ -27,8 +27,8 @@ Vagrant.configure("2") do |config|
   # Change this to a URL from which the base box can be downloaded, if you like.
   config.vm.box_url = CUSTOM_CONFIG['BOX_URL']
 
-  config.vm.provision "shell", privileged: false, path: CUSTOM_CONFIG['SETUP_SCRIPT']
-  config.vm.provision "shell", path: CUSTOM_CONFIG['POST_INSTALL_SCRIPT']
+  config.vm.provision "shell", path: CUSTOM_CONFIG['SETUP_SCRIPT']
+  config.vm.provision "shell", privileged: false, path: CUSTOM_CONFIG['POST_INSTALL_SCRIPT']
   # enable Berkshelf integration for Chef cookbook management
   # config.berkshelf.enabled = true
 
